@@ -1,0 +1,61 @@
+:root {
+	--h: 100vh;
+}
+
+body, html {
+	overscroll-behavior: none;
+
+	margin: 0;
+	padding: 0;
+
+	width: 100vw;
+	height: calc(var(--h));
+
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+
+	background-color: black;
+}
+
+canvas {
+	width: min(100vw, var(--h));
+	aspect-ratio: 1;
+}
+
+button {
+	font-family: 'Bungee Spice', serif;
+	background-color: black;
+	border-radius: 20px;
+	border-color: #1e1eca;
+	position: absolute;
+	font-size: 75px;
+}
+
+button:hover {
+	background-color: darkblue;
+}
+
+button:active {
+	background-color: lightblue;
+}
+
+h1 {
+	font-family: 'Bungee Spice', serif;
+	position: absolute;
+	align-self: flex-start;
+	margin-top: 10vh;
+	font-size: 100px;
+	user-select: none;
+}
+
+span {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	align-self: flex-end;
+	margin-bottom: 10vh;
+	font-size: 30px;
+	user-select: none;
+}
